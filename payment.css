@@ -135,3 +135,50 @@ h2{
     margin-top: 20px;
   }
 }
+
+ select {
+  font-family: "Poppins", sans-serif;
+  width: 18rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid #dddddd;
+  appearance: none;
+  outline: none;
+  }
+
+
+form {
+  position: relative;
+  z-index: 1;
+}
+
+form span {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  z-index: 0;
+}
+
+
+.upi img{
+  padding: 5px 0px 5px 5px;
+  width: 70%;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+  cursor:pointer;
+  flex-direction: column;
+  color: #555555;
+}
+
+#gpay
+{
+  width: 100%;
+}
+h4
+{
+  text-align: center;
+  margin-bottom: 20px;
+}

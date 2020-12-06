@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
 	<link rel="stylesheet" type="text/css" href="payment.css">
 </head>
 
@@ -17,30 +19,33 @@
     <h2>Pay Your Bills Here</h2><br><h1>ShopRight</h1>
     <div class="form">
       <div class="card space icon-relative">
-        <label class="label">Card holder:</label>
-        <input type="text" class="input" placeholder="Enter Card Holder's Name">
+        <label class="label">NetBanking</label>
+         <form>
+                <select onchange="showButton()">
+                    <option value="1">Select Bank</option>
+                    <option value="2">State Bank of India</option>
+                    <option value="3">ICICI Bank</option>
+                    <option value="4">Bank of Baroda</option>
+                    <option value="5">Punjab National Bank</option>
+                    <option value="6">Standard Chartered Bank</option>
+                    <option value="7">Indian Overseas Bank</option>
+                    <option value="8">Nainital Bank</option>
+                    <option value="9">IDFC First Bank</option>
+                </select>
+                <span><i class='bx bx-chevron-down'></i></span>
+            </form>
         <i class="fas fa-user"></i>
       </div>
+           <h4>OR</h4>
+
       <div class="card space icon-relative">
-        <label class="label">Card number:</label>
-        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
-        <i class="far fa-credit-card"></i>
-      </div>
-      <div class="card-grp space">
-        <div class="card-item icon-relative">
-          <label class="label">Expiry date:</label>
-          <input type="text" name="expiry-data" class="input"  placeholder="00 / 00">
-          <i class="far fa-calendar-alt"></i>
-        </div>
-        <div class="card-item icon-relative">
-          <label class="label">CVC:</label>
-          <input type="text" class="input" data-mask="000" placeholder="000">
-          <i class="fas fa-lock"></i>
-        </div>
-      </div>
-        
+        <label class="label">Select Your UPI App</label>
+        <div class="upi"><img src="./images/paytmUPI.jpg"></div>
+        <div class="upi"><img src="./images/phonepeUPI.png"></div>
+         <div class="upi card-item icon-relative" id="gpay"><img src="./images/GPay.png"></div>
+            <div class="upi"><img src="./images/bhimUPI.png"></div>
       <div class="btn">
-        Pay
+        Place Order
       </div> 
       
     </div>
